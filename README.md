@@ -29,7 +29,7 @@ dependencies {
 ### Start a Proxy
 
 ```kotlin
-val startUseCase = StartProxyUseCase()
+val startUseCase = StartLocalProxyUseCase()
 startUseCase(1080, Proxy(URI("https://your-remote-proxy.com:443"), "yourUsername", "yourPassword"))
 ```
 
@@ -39,6 +39,6 @@ Your traffic will go through the remote proxy with authentication.
 ### Stop a Proxy
 
 ```kotlin
-val stopUseCase = StopProxyUseCase()
+val stopUseCase = StopLocalProxyUseCase()
 stopUseCase(1080)
 ```
