@@ -56,8 +56,7 @@ internal class Socks5ProxyServer(
 
             // Read request
             val req = input.readNBytes(4)
-            val cmd = req[1].toInt()
-            val atyp = input.read()
+            val atyp = req[3].toInt()
 
             val destHost = when (atyp) {
                 0x01 -> InetAddress.getByAddress(input.readNBytes(4)).hostAddress // IPv4

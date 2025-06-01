@@ -12,7 +12,7 @@ koxxy is published to Maven Central. Add the dependency to your `build.gradle.kt
 
 ```kotlin
 dependencies {
-    implementation("digital.guimauve.koxxy:core:0.1.0")
+    implementation("digital.guimauve.koxxy:core:1.0.0")
 }
 ```
 
