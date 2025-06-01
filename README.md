@@ -35,3 +35,10 @@ startUseCase(1080, Proxy(URI("https://your-remote-proxy.com:443"), "yourUsername
 
 Now you can connect to: `socks5://localhost:1080`
 Your traffic will go through the remote proxy with authentication.
+
+### Stop a Proxy
+
+```kotlin
+val stopUseCase = StopProxyUseCase()
+stopUseCase(1080)
+```
